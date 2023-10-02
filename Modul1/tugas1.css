@@ -1,0 +1,46 @@
+html, body{
+  margin: auto;
+  padding: auto;
+background-image: url(foodcourt.jpg);
+padding-bottom: 60px;
+  background-position: center;
+background-repeat: no-repeat;
+}
+
+h1{
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 50px;
+  font-weight:bold;
+  margin-bottom: 10px;
+}
+
+tr {
+  color: white;
+}
+
+table{ 
+  width: 40%;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid #fcf9f9;
+  padding: 8px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+th {
+  text-align: center;
+  background-color: #4CAF50;
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  /* padding-top: 50px; */
+  margin-top: 50px;
+  /* border: white 10px solid; */
+  text-align: center;
+}
