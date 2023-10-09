@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Form</title>
+    <style>
+        .center {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="date"] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="tugas1proses_biodata.php" method="post">
+        <h2 class="center">Biodata Form</h2>
+        
+        <table border="1" align="center" width="50%">
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>NIM:</td>
+                <td><input type="text" id="NIM" name="NIM" required></td>
+            </tr>
+            <tr>
+                <td>Umur:</td>
+                <td><input type="number" id="umur" name="umur" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir:</td>
+                <td><input type="date" name="tanggal_lahir" id="tanggal_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jurusan:</td>
+                <td>
+                    <select name="jurusan" id="jurusan">
+                        <option value="">- Pilih Jurusan -</option>
+                        <option value="Teknik Sipil">Teknik Sipil</option>
+                        <option value="Teknik Mesin">Teknik Mesin</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        
+        <input type="submit" class="center" value="Tampilkan Biodata">
+    </form>
+</body>
+</html>
